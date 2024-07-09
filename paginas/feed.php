@@ -28,7 +28,7 @@
                         Postagem::gerarPostCard($p->cod, $p->imagem, $p->nome, $p->texto_post, $p->post_img, $p->likes, $qtd);
                         
                        }
-                       echo var_dump($lista);
+                       //echo var_dump($lista);
 
                        
 

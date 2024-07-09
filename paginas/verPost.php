@@ -12,6 +12,9 @@
     <?php 
         require_once "../classes/Postagem.php";
         require_once "../config/banco.php";
+        include_once "../header.php";
+
+        session_start();
 
         $codPostagem = $_GET["cod"] ?? null;
         $novoComentario = $_POST["comentario"] ?? null;

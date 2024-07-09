@@ -19,7 +19,7 @@
             echo '<img src="../images/posts/'. $postImg . '">';
             echo '<hr>';
             echo '<span class="material-symbols-outlined">favorite</span>'. $postLike;
-            echo '<span class="material-symbols-outlined">chat_bubble</span>' . $postComment;
+            echo '<span class="material-symbols-outlined">chat_bubble</span>' . $postComent;
                         
             echo '</div>';
             echo '</a>';
