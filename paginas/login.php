@@ -14,6 +14,7 @@
         session_start();
     
         require_once "../config/banco.php";
+        require_once "../classes/Usuario.php";
 
         $usu = $_POST["usuario"] ?? null;
         $usu = $_POST["senha"] ?? null;
