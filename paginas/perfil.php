@@ -14,10 +14,11 @@
         
         require_once "../config/banco.php";
         require_once "../classes/Usuario.php";
+        require_once "../classes/Postagem.php";
         include_once "../config/enviarImagem.php";
         include_once "../header.php";
 
-        session_start();
+        //session_start();
 
         $codUsuario = $_GET["usr"] ?? null;
         $textoNovoPost = $_POST["textoPost"] ?? null;
@@ -81,7 +82,7 @@
                     for ($i=0; $i < count($postagens); $i++) { 
                         $p = $postagens[$i];
                         //-- descomentar ao arrumar import
-                        //-- Postagem::gerarPostCard($p->cod, $p->imagem, $p->nome, $p->texto_post, $p->post_img, $p->likes, 0);    
+                         Postagem::gerarPostCard($p->cod, $p->imagem, $p->nome, $p->texto_post, $p->post_img, $p->likes, 0);    
                     }
                 ?>
             </div>
