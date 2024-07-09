@@ -3,7 +3,7 @@
     
 
     // INICIAR BANCO --------------------------------------------------------------------------
-    $banco = new mysqli("localhost", "root", "", "banco_prova");
+    $banco = new mysqli("localhost:3307", "root", "", "banco_prova");
 
     if($banco->connect_errno){
         echo "<p>Erro: " . $banco->errno . "-->" . $banco->connect_error . "</p>";

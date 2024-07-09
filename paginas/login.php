@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do Perfil</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbol+Outlined:opsz,wght@20..48,400..700"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,7 +18,7 @@
         $usu = $_POST["usuario"] ?? null;
         $usu = $_POST["senha"] ?? null;
 
-        echo "$usuario, $senha";
+        // echo "$usuario, $senha";
 
         if(!is_null($usuario) && !is_null($senha)){
             if(fazerlogin($usuario, $senha)){

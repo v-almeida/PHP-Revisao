@@ -40,4 +40,4 @@
 
 
 7 - index.html
-  - mini rota, redirecionar para as outras páginas;
+  - mini rota, redirecionar para as outras páginas; checked
