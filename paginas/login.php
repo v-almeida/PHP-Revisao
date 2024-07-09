@@ -14,23 +14,23 @@
         session_start();
     
         require_once "../config/banco.php";
-        require_once "../classes/Usuario.php";
+        
 
-        $usu = $_POST["usuario"] ?? null;
-        $usu = $_POST["senha"] ?? null;
+        $usuario = $_POST["usuario"] ?? null;
+        $senha = $_POST["senha"] ?? null;
 
-        // echo "$usuario, $senha";
+         //echo "$usuario, $senha";
 
         if(!is_null($usuario) && !is_null($senha)){
             if(fazerLogin($usuario, $senha)){
                 header ("Location: feed.php");
-            }else {
-                echo "erro";
             }
             
         }
 
-        echo password_hash("senha124", PASSWORD_DEFAULT);
+        echo password_hash("123", PASSWORD_DEFAULT);
+
+        
     ?>
 
     <nav class = "navbar">

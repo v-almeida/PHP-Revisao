@@ -45,7 +45,7 @@
                 Usuario::salvarUsuarioNaSessao($objUsuario);
                 return true;
             }else{
-                echo "Senha Inválida :/";
+                echo "Senha Inválida:/";
                 return false;
             }
 

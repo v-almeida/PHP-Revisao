@@ -32,7 +32,7 @@
   - Ao abrir o post escolhido ele vai te levar para a página "verPost.php";
   - Neste arquivo você precisa mostrar os comentários do post escolhido;
   - Conseguindo fazer isso, agora arrume a função "carregarComentarios()" do arquivo "Postagem.php" para que apenas mostre a opção de apagar para quem esteja logado;
-  - Em seguida arrume botão de curtir para que ele funcione (chamar arquivo like.php); 
+  - Em seguida arrume botão de curtir para que ele funcione (chamar arquivo like.php); checked
 
 6 - Nova postagem em "perfil.php":
   - Mostrar nome e foto do usuario dono do perfil (não do perfil logado);
