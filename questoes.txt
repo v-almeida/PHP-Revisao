@@ -2,7 +2,7 @@
 
   - fazer o formulário de login funcionar;
   - ao fazer login, salvar ele em sessão para o resto do site funcionar;
-  - login funcionando, alterar as senhas "123" para uma "hash" da senha escolhida;
+  - login funcionando, alterar as senhas "123" para uma "hash" da senha escolhida; checked
 
 
 

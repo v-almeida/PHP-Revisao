@@ -11,6 +11,7 @@
 
     <?php 
         require_once "../config/enviarImagem.php";
+        require_once "../config/banco.php";
 
         session_start();
 
@@ -24,8 +25,12 @@
             // ver se o formulário foi enviado
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 
+                $usu = $_POST["usuario"] ?? null;
+                $usu = $_POST["nome"] ?? null;
+                $usu = $_POST["senha"] ?? null;
+
                 $imagemNovoUsuario = enviarImagem("profile"); // função para pegar e salvar a imagem
-                //-- novoUsuario($usuario, $nome, $senha, $imagemNovoUsuario); //-- descomentar quando tiver os valores
+                novoUsuario($usuario, $nome, $senha, $imagemNovoUsuario); //-- descomentar quando tiver os valores
                 
             }
             
