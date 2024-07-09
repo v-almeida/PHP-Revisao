@@ -39,7 +39,7 @@
                 <p class="social-card-text"> <?=$postText?> </p>
                 <img src="../images/posts/<?=$postImg?>">
                 <hr>
-                <span class="material-symbols-outlined">favorite</span> <?=$postLike?> 
+                <a href="../paginas/like.php?tipo=p&cod=<?= $codPost ?>"><span class="material-symbols-outlined">favorite</span> <?=$postLike?> </a>
                 <span class="material-symbols-outlined">chat_bubble</span> <?=$postComent?>
                 
                 <?php 
@@ -62,7 +62,11 @@
             
             for ($i=0; $i < count($listaComentarios); $i++) { 
                 echo "<p>";
-                echo '<a href="../paginas/apagar.php?tipo=c&cod=' . $listaComentarios[$i]->cod_comentario . '"><span class="material-symbols-outlined" style="color: red;"> delete </span></a>';
+
+                if(isset ($_SESSION['usu'])){
+                    echo '<a href="../paginas/apagar.php?tipo=c&cod=' . $listaComentarios[$i]->cod_comentario . '"><span class="material-symbols-outlined" style="color: red;"> delete </span></a>';
+                }
+                
                 echo $listaComentarios[$i]->comentario;
                 echo '</p> <hr>';
             }

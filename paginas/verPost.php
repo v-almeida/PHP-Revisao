@@ -37,6 +37,10 @@
             <div class="single-post-container" style="margin-top: 20px;">
             
                 <!-- Carregar todos os comentários dos posts -->
+                 <?php 
+                 
+                    Postagem:: carregarComentarios($listaComentarios)
+                 ?>
 
                 <!-- Adicionar novo comentário -->
                 <form action="" method="post">

@@ -21,7 +21,7 @@
         // echo "$usuario, $senha";
 
         if(!is_null($usuario) && !is_null($senha)){
-            if(fazerlogin($usuario, $senha)){
+            if(fazerLogin($usuario, $senha)){
                 header ("Location: feed.php");
             }else {
                 echo "erro";
