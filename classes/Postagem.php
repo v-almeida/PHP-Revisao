@@ -7,6 +7,23 @@
         
         static function gerarPostCard($codPost, $userPic, $userName, $postText, $postImg, $postLike, $postComent){
             echo '<div class="social-card">';
+            echo '<a href="./verPost.php?cod=' . $codPost . '">';
+            echo '<div class="social-card-user-info">';
+            echo '<img src="../images/profile/'. $userPic . '" style="width: 40px">';
+            echo '<h4>'. $userName . 'a</h4>';
+            echo '</div>';
+
+            echo '<div class="social-card-content">';
+            echo '<p class="social-card-text">'. $postText . '</p>';
+                        
+            echo '<img src="../images/posts/'. $postImg . '">';
+            echo '<hr>';
+            echo '<span class="material-symbols-outlined">favorite</span>'. $postLike;
+            echo '<span class="material-symbols-outlined">chat_bubble</span>' . $postComment;
+                        
+            echo '</div>';
+            echo '</a>';
+            echo '</div>';
             echo '</div>';
         }
 

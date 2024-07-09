@@ -49,7 +49,7 @@
                     <input type="text" name="usuario" class="input-button">
 
                     <br><br><label for="">Senha:</label>
-                    <input type="password" name="senha" class="input-button">
+                    <input type="text" name="senha" class="input-button">
 
                     <br><br><button type="submit" class="btn-blue">Comentar</button>
                 </form>
