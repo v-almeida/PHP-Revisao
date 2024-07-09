@@ -14,8 +14,8 @@
     // FUNÇÃO DE USUARIO --------------------------------------------------------------------------
     function novoUsuario($usuario, $nome, $senha, $image = null){
         global $banco;
-        $senhaHash; echo password_hash($senha, PASSWORD_DEFAULT);
-        $q = "INSERT INTO usuarios(usuario, nome, senha, imagem) VALUES ('$usuario', '$nome', '$senha', '$image')";
+        $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+        $q = "INSERT INTO usuarios(usuario, nome, senha, imagem) VALUES ('$usuario', '$nome', '$senhaHash', '$image')";
         $banco->query($q);
     }
     
