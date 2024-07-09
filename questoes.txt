@@ -25,7 +25,7 @@
   - Dado o modelo de uma postagem (html) presente no arquivo, mostrar automaticamente todas as postagens existentes no banco;
   - Para que isso seja possível, você precisa arrumar a função "gerarPostCard()" do arquivo Postagem.php e passar por parâmetro todos os dados retornados do banco (de cada publicacao);
   - Dentro desta função você deverá adicionar tudo o que for necessário para fazer a postagem do banco ficar parecida com a do modelo, porém com seus próprios dados;
-  - Em seguida, lembre-se que ao clicar em um post ele deve abrir o arquivo "verPost.php" passando seu código pela url e asism abrir o post esolhido;
+  - Em seguida, lembre-se que ao clicar em um post ele deve abrir o arquivo "verPost.php" passando seu código pela url e asism abrir o post esolhido; checked
 
 3 - Post em "verPost.php":
 
